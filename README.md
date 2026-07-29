@@ -1,29 +1,29 @@
 # 🏦 Bank Management System
 
-A **Python-based Bank Management System** that uses **MySQL** as its backend database to simulate core banking operations through a command-line interface. The application allows users to create bank accounts, securely log in using an account number and PIN, and perform essential banking transactions such as deposits, withdrawals, and balance inquiries.
+A **Python-based command-line Bank Management System** that uses **MySQL** to store customer account information and perform basic banking operations. The application allows users to create new bank accounts, log in with a randomly generated account number and PIN, and perform common banking activities such as checking account balances, depositing money, and withdrawing funds.
 
-This project demonstrates the implementation of **Python programming**, **MySQL database connectivity**, **CRUD operations**, **user authentication**, and **transaction management** while ensuring data integrity through input validation and exception handling.
+The project demonstrates the use of **Python programming**, **MySQL database connectivity**, **input validation**, **conditional statements**, **loops**, **random number generation**, and **basic database operations**. Customer information is stored in a MySQL database, while transactions are managed through a simple and interactive command-line interface.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 Secure user registration with input validation
-- 👤 Automatic generation of unique account numbers and PINs
-- 🔑 User authentication using account number and PIN
-- 💰 Deposit money into an account
-- 💸 Withdraw money with balance validation
-- 📊 Check account balance
-- 🗄️ MySQL database integration for persistent data storage
-- ⚠️ Error handling and validation for reliable transactions
+- Create a new bank account
+- Automatic generation of account number and PIN
+- Secure login using account number and PIN
+- Deposit money into an account
+- Withdraw money with balance validation
+- Check current account balance
+- Store customer information in a MySQL database
+- Input validation for user details
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Python 3**
-- **MySQL**
-- **MySQL Connector/Python**
+- Python
+- MySQL
+- MySQL Connector/Python
 
 ---
 
@@ -31,130 +31,125 @@ This project demonstrates the implementation of **Python programming**, **MySQL 
 
 ```text
 Bank-Management/
-│── main.py                 # Main application
-│── database.py             # Database connection and queries
-│── requirements.txt        # Project dependencies
-│── README.md               # Project documentation
-└── sql/
-    └── bank_database.sql   # Database schema
+│── bank management.py
+└── README.md
 ```
-
-> *Note: The structure may vary depending on your project files.*
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Prerequisites
 
-### 1. Clone the repository
+Before running the project, ensure you have:
 
-```bash
-git clone https://github.com/MetalKhamoo/Bank-Management.git
-```
+- Python 3.x installed
+- MySQL Server installed and running
+- mysql-connector-python package installed
 
-### 2. Navigate to the project directory
-
-```bash
-cd Bank-Management
-```
-
-### 3. Install dependencies
+Install the required package using:
 
 ```bash
 pip install mysql-connector-python
 ```
 
-### 4. Create the MySQL database
+---
 
-- Create a new MySQL database.
-- Import the provided SQL file (`bank_database.sql`) if available.
-- Update your database credentials in the Python source code.
+## ▶️ Running the Project
 
-Example:
+1. Clone the repository.
+
+```bash
+git clone https://github.com/MetalKhamoo/Bank-Management.git
+```
+
+2. Navigate to the project directory.
+
+```bash
+cd Bank-Management
+```
+
+3. Update the MySQL connection credentials inside the Python file if required.
 
 ```python
 host="localhost"
 user="root"
 password="your_password"
-database="bank_management"
 ```
 
-### 5. Run the application
+4. Run the application.
 
 ```bash
-python main.py
+python "bank management.py"
 ```
 
 ---
 
 ## 📋 Functionalities
 
-### Account Management
+### Account Creation
 
-- Create a new bank account
-- Generate unique account number and PIN
-- Store user information securely
+- Enter personal details
+- Initial deposit
+- Automatically generated account number and PIN
+- Customer details stored in MySQL
 
-### User Authentication
+### User Login
 
 - Login using account number and PIN
-- Validate user credentials
+- Authentication before accessing banking services
 
 ### Banking Operations
 
-- Deposit funds
-- Withdraw funds
 - Check account balance
+- Deposit money
+- Withdraw money
+- Return to homepage or exit the application
 
 ---
 
-## 💡 Concepts Demonstrated
+## 💻 Database
+
+The application automatically creates:
+
+- Database: `bank`
+- Table: `B_Details`
+
+The table stores:
+
+- Name
+- Age
+- Phone Number
+- Initial Deposit
+- Government ID
+- Account Number
+- PIN
+
+---
+
+## 📚 Concepts Used
 
 - Python Programming
-- Object-Oriented Programming (if applicable)
 - MySQL Database Connectivity
-- CRUD Operations
+- CRUD (Create and Read)
 - User Authentication
-- Exception Handling
+- Conditional Statements
+- Loops
 - Input Validation
-- Transaction Processing
+- Random Number Generation
+- Exception-Free User Interaction
 
 ---
 
-## 📸 Sample Output
+## 🔮 Future Improvements
 
-```text
-========== BANK MANAGEMENT SYSTEM ==========
-
-1. Create Account
-2. Login
-3. Exit
-
-Enter your choice: 1
-
-Enter Name:
-Enter Age:
-Enter Phone Number:
-Enter Government ID:
-Enter Initial Deposit:
-
-Account Created Successfully!
-
-Account Number: 10023456
-PIN: 4728
-```
-
----
-
-## 🔮 Future Enhancements
-
-- Password hashing for improved security
-- Money transfer between accounts
+- Update customer details
+- Delete account functionality
 - Transaction history
-- Admin dashboard
+- PIN change option
+- Money transfer between accounts
 - Interest calculation
-- GUI using Tkinter or PyQt
-- Web version using Flask or Django
-- Email/SMS notifications
+- Password encryption
+- Graphical User Interface (GUI)
+- Online banking support
 
 ---
 
@@ -168,4 +163,4 @@ GitHub: https://github.com/MetalKhamoo
 
 ## 📄 License
 
-This project is intended for **educational and learning purposes**.
+This project is developed for educational and learning purposes.
